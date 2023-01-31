@@ -1,0 +1,125 @@
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos
+$ git config --global user.name "HugoMorales"
+
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos
+$ git config --global user.email hugo.156@hotmail.com
+
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos
+$ git init
+Initialized empty Git repository in C:/Users/Hugo/Desktop/GenerationJavaFullStack/GitEjemplos/.git/
+
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ejemplo.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos (master)
+$ git add ejemplo.js
+
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   ejemplo.js
+
+
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos (master)
+$ git commit -m "Este es la primer modificacion de mi archivo"
+[master (root-commit) 1044ee0] Este es la primer modificacion de mi archivo
+ 1 file changed, 1 insertion(+)
+ create mode 100644 ejemplo.js
+
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos (master)
+$ git log
+commit 1044ee0da50936bee06a7736e3ef90501a3bc086 (HEAD -> master)
+Author: HugoMorales <hugo.156@hotmail.com>
+Date:   Tue Jan 31 12:29:03 2023 -0600
+
+    Este es la primer modificacion de mi archivo
+
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos (master)
+$ git add ejemplo2.js
+
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos (master)
+$ git commit -m "Este es un nuevo archivo llamado ejemplo2"
+[master 232e7f6] Este es un nuevo archivo llamado ejemplo2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 ejemplo2.js
+
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos (master)
+$ git log
+commit 232e7f64dd7788e142135760a0904402fc86d3fb (HEAD -> master)
+Author: HugoMorales <hugo.156@hotmail.com>
+Date:   Tue Jan 31 12:47:13 2023 -0600
+
+    Este es un nuevo archivo llamado ejemplo2
+
+commit 1044ee0da50936bee06a7736e3ef90501a3bc086
+Author: HugoMorales <hugo.156@hotmail.com>
+Date:   Tue Jan 31 12:29:03 2023 -0600
+
+    Este es la primer modificacion de mi archivo
+
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos (master)
+$ git log ejemplo2.js
+commit 232e7f64dd7788e142135760a0904402fc86d3fb (HEAD -> master)
+Author: HugoMorales <hugo.156@hotmail.com>
+Date:   Tue Jan 31 12:47:13 2023 -0600
+
+    Este es un nuevo archivo llamado ejemplo2
+
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ejemplo.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ejemplo.js
+        modified:   ejemplo2.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos (master)
+$ git add .
+
+Hugo@DESKTOP-AU6SS53 MINGW64 ~/Desktop/GenerationJavaFullStack/GitEjemplos (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   ejemplo.js
+        modified:   ejemplo2.js
